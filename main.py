@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # Sidebar top-left icon
-st.sidebar.image(r"C:\Users\RAuma.ug\Downloads\Uganda Flag.jpg", width=200)
+st.sidebar.image(Uganda Flag.jpg", width=200)
 st.sidebar.title("Dashboard")
 page = st.sidebar.radio("Go to", ["Overview", "Report", "Performance Metrics", "Geo Visualizer", "Feedback"])
 
