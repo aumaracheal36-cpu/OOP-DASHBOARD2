@@ -12,14 +12,14 @@ st.set_page_config(
 )
 
 # Sidebar top-left icon
-st.sidebar.image(Uganda Flag.jpg", width=200)
+st.sidebar.image(r"Uganda Flag.jpg", width=200)
 st.sidebar.title("Dashboard")
 page = st.sidebar.radio("Go to", ["Overview", "Report", "Performance Metrics", "Geo Visualizer", "Feedback"])
 
 # ==========================
 # Load cleaned health data
 # ==========================
-DATA_PATH = r"C:\Users\RAuma.ug\OneDrive - Population Services International\Desktop\Mine\UCU\Semester One\Object Oriented Programming\Exam\cleaned_health_data.xls"
+DATA_PATH = (r"cleaned_health_data.xls")
 df = pd.read_csv(DATA_PATH)
 
 # ==========================
@@ -134,7 +134,7 @@ if page == "Performance Metrics":
     st.title("Adverse Pregnancy Outcomes Dashboard")
 
     # Load predicted data
-    predicted_path = r"C:\Users\RAuma.ug\OneDrive - Population Services International\Desktop\Mine\UCU\Semester One\Object Oriented Programming\Exam\predicted_data.csv"
+    predicted_path = (r"predicted_data.csv")
     test_df = pd.read_csv(predicted_path)
 
     if 'year' not in test_df.columns:
